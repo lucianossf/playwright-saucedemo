@@ -1,0 +1,21 @@
+{
+  "name": "playwright-saucedemo",
+  "version": "1.0.0",
+  "description": "Suite de testes E2E com Playwright para o site SauceDemo",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:debug": "npx playwright test --debug",
+    "test:ci": "npx playwright test",
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:serve": "allure serve allure-results"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@faker-js/faker": "^8.4.1",
+    "allure-playwright": "^3.0.0",
+    "allure-commandline": "^2.29.0"
+  }
+}
