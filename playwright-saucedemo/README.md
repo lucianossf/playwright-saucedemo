@@ -59,7 +59,7 @@ playwright-saucedemo/
 | `allure-commandline` | `^2.29.0` | Geração e visualização local do relatório Allure |
 | Node.js | `20` no workflow | Runtime configurado na automação do GitHub Actions |
 | TypeScript | Sem versão declarada no `package.json` | Os testes estão escritos em arquivos `.ts`; o projeto não fixa uma dependência TypeScript direta |
-| GitHub Actions | Ações `@v4` no workflow | Execução de CI e publicação do relatório |
+| GitHub Actions | `checkout`/`setup-node`/`upload-artifact`/`download-artifact` `@v4`; Allure `@master`; Pages `@v3` | CI e publicação do relatório |
 
 O `package.json` não declara o campo `engines`; Node.js 20 é a versão configurada no CI.
 
